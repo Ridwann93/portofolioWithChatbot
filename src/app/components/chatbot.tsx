@@ -17,7 +17,7 @@ export default function Chatbot() {
   // AUTO SCROLL REF
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // AUTO SCROLL SAAT PESAN BERTAMBAH
+  // AUTO SCROLL
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isTyping]);

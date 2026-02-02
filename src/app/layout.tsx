@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import type { ReactNode } from 'react';
 import Navbar from './components/navbar';
-// 1. Import komponen Script dari Next.js
 import Script from 'next/script';
 
 const geistSans = Geist({
@@ -29,7 +28,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* 2. Taruh Link CSS Bootstrap di sini */}
         <link 
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
           rel="stylesheet" 
@@ -44,7 +42,6 @@ export default function RootLayout({
           {children}
         </main>
 
-        {/* 3. Taruh Script JS Bootstrap sebelum tutup body menggunakan komponen Script */}
         <Script 
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 

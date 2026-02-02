@@ -1,0 +1,20 @@
+Step by step integrasi chatbot (Ollama phi3):
+1. install ollama phi3
+2. run n8n
+3. membuat workflow baru di n8n
+4. tambahkan node Webhook, lalu setting http method = POST untuk menerima input pesan dari web portofolio
+5. tambahkan node Edit Fields(SET) setelah node Webhook untuk mengubah isi pesan menjadi variable untuk di proses di step selanjutnya.
+6. tambahkan node HTTP Request setelah node Edit Fields. lalu hubungkan ke API lokal Ollama Phi3
+7. tambahkan node Respond to Webhook setelah node HTTP Request. tujuannya untuk mengirimkan hasil jawaban AI Kembali ke Web porto secara realtime.
+8. membuat file API Route, bikin file route.ts di folder src/app/api/chatbot. sebagai perantara antara web porto dengan n8n.
+9. membuat file baru bernama chatbot.tsx untuk membuat UI dan logika interaksi pengguna.
+10. membuat file baru Bernama chatbot.module.css untuk mendesain UI chatbot agar lebih menarik.
+11. pasang komponen chatbot ke dalam halaman Utama (page.tsx) agar muncul di dalam website.
+12. chatbot siap diuji coba.
+
+Step by step uji coba chatbot:
+1. buka 2 tab cmd, tab pertama jalankan perintah "n8n" untuk menyalakan n8n dan tab kedua jalankan perintah "ollama run phi3" untuk menyalakan ollama.
+2. buka folder projek next.js, buka cmd dan jalankan projek dengan perintah "npm run dev"
+3. masuk ke dalam web portofolio dan chatbot siap diuji.
+
+catatan: Ketika proses uji coba saya menggunakan Bahasa inggris untuk kirim pesan dengan chatbot, karena chatbot yang saya gunakan memiliki kelemahan dari segi pemahaman Bahasa selain Bahasa inggris.
