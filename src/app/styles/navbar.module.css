@@ -1,0 +1,34 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #0b111a;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  margin-right: 25vh;
+}
+
+.menu li a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: dodgerblue;
+}
+
+/* 🔥 ACTIVE */
+.menu li a.active {
+  color: dodgerblue;
+  font-weight: 600;
+}

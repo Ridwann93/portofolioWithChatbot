@@ -1,0 +1,263 @@
+.homePage {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  background-color: #0b111a;
+}
+
+.leftSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftSide .leftSideText {
+  margin-left: 20vh;
+}
+
+.leftSide .leftSideText h2 {
+  margin-bottom: 1rem;
+}
+
+.leftSide .leftSideText h1 {
+  margin: 0;
+  font-size: 5rem;
+}
+
+.leftSide .leftSideText p {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.rightSide .bigCircleImage {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.rightSide .bigCircleImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.customButton {
+  font-size: 1.5rem !important;
+  width: 60%;
+  height: 25%;
+}
+
+/* WRAPPER HOME */
+.homeSection {
+  min-height: 100vh;
+}
+
+/* SECTION UMUM */
+.section {
+  min-height: 100vh;
+  padding: 5rem;
+}
+
+
+/* SECTION EXPERIENCE */
+.timeline {
+  position: relative;
+  margin-top: 6rem;
+}
+
+.line {
+  position: absolute;
+  left: 205px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  /* background: linear-gradient(to bottom, #1e90ff, transparent); */
+  background-color: #1e90ff;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 200px 40px 1fr;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: dodgerblue;
+  border-radius: 50%;
+  box-shadow: 0 0 12px dodgerblue;
+  border: 2px solid;
+  z-index: 1;
+}
+
+.experience {
+  background: radial-gradient(#0b111a);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.experience h2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+
+/* SECTION PROJECTS */
+.projects {
+  background-color: #0b111a;
+  color: white;
+  position: relative;
+}
+
+.projects h2 {
+  justify-content: center;
+  display: flex;
+}
+
+.projectSlider {
+  max-width: 80vw;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 4rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.projectCard {
+  width: 70vw;
+  /* ⬅️ INI KUNCINYA */
+  height: 60vh;
+  /* tinggi ikut layar */
+  border-radius: 20px;
+  overflow: hidden;
+  background: #111;
+  flex-shrink: 0;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectSlider::-webkit-scrollbar {
+  display: none;
+}
+
+.projectSlider {
+  scrollbar-width: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 2rem;
+
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6px;
+
+  transition: background 0.3s, transform 0.2s;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow.left {
+  left: 5rem;
+}
+
+.arrow.right {
+  right: 5rem;
+}
+
+
+/* SECTION ABOUT */
+.about {
+  padding: 2rem;
+  background-color: #0b111a;
+  color: white;
+  scroll-margin-top: 70px;
+}
+
+.about h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContentWrapper {
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.aboutContent {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid;
+  width: fit-content;
+  background-color: #141b2d;
+  border-radius: 20px;
+}
+
+.photo {
+  width: 50vh;
+  height: 50vh;
+  margin-right: 2rem;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6%;
+  object-fit: cover;
+}
+
+.description {
+  color: white;
+  width: 50vh;
+  height: 50vh;
+  margin-top: 0.5rem;
+}
+
+.description p {
+  margin-bottom: 2rem;
+}
