@@ -56,7 +56,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"model\": \"phi3\",\n  \"prompt\": \"{{ $json.prompt }}\",\n  \"stream\": false\n}\n",
+        "jsonBody": "={\n  \"model\": \"qwen2.5:3b\",\n  \"prompt\": \"{{ $json.prompt }}\",\n  \"stream\": false\n}\n",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -151,7 +151,7 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "a02faeb6-b3bf-4750-a27c-bdb15ca89b0e",
+  "versionId": "d9cf2a4c-f245-49e4-b422-113766d6ec88",
   "meta": {
     "instanceId": "6321f4a75ea153ffd89a8f36ff629d99a2485cb1396a2170d7fd3bfba5ed8e9a"
   },

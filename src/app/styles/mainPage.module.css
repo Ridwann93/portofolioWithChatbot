@@ -146,9 +146,7 @@
 
 .projectCard {
   width: 70vw;
-  /* ⬅️ INI KUNCINYA */
   height: 60vh;
-  /* tinggi ikut layar */
   border-radius: 20px;
   overflow: hidden;
   background: #111;

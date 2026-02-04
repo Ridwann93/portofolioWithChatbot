@@ -1,5 +1,5 @@
-Step by step integrasi chatbot (Ollama phi3):
-1. install ollama phi3
+Step by step integrasi chatbot (Ollama qwen2.5:3b):
+1. install ollama qwen2.5:3b
 2. run n8n
 3. membuat workflow baru di n8n
 4. tambahkan node Webhook, lalu setting http method = POST untuk menerima input pesan dari web portofolio
@@ -13,8 +13,6 @@ Step by step integrasi chatbot (Ollama phi3):
 12. chatbot siap diuji coba.
 
 Step by step uji coba chatbot:
-1. buka 2 tab cmd, tab pertama jalankan perintah "n8n" untuk menyalakan n8n dan tab kedua jalankan perintah "ollama run phi3" untuk menyalakan ollama.
+1. buka 2 tab cmd, tab pertama jalankan perintah "n8n" untuk menyalakan n8n dan tab kedua jalankan perintah "ollama run qwen2.5:3b" untuk menyalakan ollama.
 2. buka folder projek next.js, buka cmd dan jalankan projek dengan perintah "npm run dev"
 3. masuk ke dalam web portofolio dan chatbot siap diuji.
-
-catatan: Ketika proses uji coba saya menggunakan Bahasa inggris untuk kirim pesan dengan chatbot, karena chatbot yang saya gunakan memiliki kelemahan dari segi pemahaman Bahasa selain Bahasa inggris.
